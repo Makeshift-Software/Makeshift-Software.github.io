@@ -1,3 +1,11 @@
-<script> window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+<script> 
+
+var call_to = "http://smart-ip.net/geoip-json?callback=?";
+
+$.getJSON(call_to, function(data){
+   alert(data.host);
+});
+
+window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
 
 </script>
